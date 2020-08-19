@@ -49,3 +49,11 @@ The program will recognize words that have a consonant before qu and will move t
 The program will recognize non-alphabetic input and respond with a message.
 
 
+
+
+const vowels = ["a", "e", "i", "o", "u"];
+const inputted = function(word) {
+  if ((word.lenght === 1) || (word[0] === "y") || (word[0] === Y)) {
+    return word + "ay"
+  }
+}
