@@ -1,19 +1,33 @@
 //Business Logic
 
 
-
 function pigLatin(userInput) {
   const vowels = ["a", "e", "i", "o", "u"];
+  const consonants = ["b", "c", "d", "f", "g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z"];
   let arrayInput = userInput.split("");
-  if (vowels.includes(userInput.charAt(0))) {
-    
-    let firstLetter = arrayInput.slice(1);
-    alert(firstLetter);
+  if (userInput === "" || userInput <=0) {
+      alert("Please enter a sentence"); 
+
+  } else if (vowels.includes(userInput.charAt(0))) {
+    $("#finalWord").text(userInput+"way");
   
+  } else if (consonants.includes(userInput.charAt(0))) {
+    let firstLetterRemoved = arrayInput.slice(1);
+    let removedLetter = userInput.charAt(0);
+    //array is logging as typeOf function
+    let array = [];
+    array.push(firstLetterRemoved);
+    array.push(removedLetter);
+    array.push("ay");
+    $("#finalWord").text(array);
+      
+  // } else if {
   } else {
     alert("not");
   }
 }
+
+//UI Logic
 
 $(document).ready(function() {
   $("form#inputForm").submit(function(event) {
@@ -23,8 +37,4 @@ $(document).ready(function() {
   });
 });
 
-// const enteredNumber = function(inputtedArray) {
-//   if (inputtedArray === 0) {
-//     alert("Please enter a sentence"); 
-//   }
-// }
+
