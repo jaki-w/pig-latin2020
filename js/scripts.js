@@ -7,11 +7,12 @@ let pigLatin = function(userInput) {
   words.forEach(function(word) { 
 
     let vowels = /[aeiou]/;
-    let numbers = /[]
+    // let numbers = /[0-9]/g;
+    let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
     let firstVowel = userInput.match(vowels);
     let firstVowelPostion = userInput.indexOf(firstVowel);
 
-    if (userInput === "") {
+    if (userInput === "" || numbers.includes(userInput[0])) {
         alert("Please enter a sentence"); 
 
     } else if (firstVowelPostion === 0) {
