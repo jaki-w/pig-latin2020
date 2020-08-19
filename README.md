@@ -16,7 +16,7 @@ Words beginning with several consonants - consecutive consonants moved to the en
 
 Words beginning with "qu"  - will move "qu" to the end and "ay" added. 
 
-Worsd begins 
+Worsd beginning with "y" - will be treated as a consonant.
 
 
 

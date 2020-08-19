@@ -7,7 +7,6 @@ let pigLatin = function(userInput) {
   words.forEach(function(word) { 
 
     let vowels = /[aeiou]/;
-    // let numbers = /[0-9]/g;
     let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
     let firstVowel = userInput.match(vowels);
     let firstVowelPostion = userInput.indexOf(firstVowel);
@@ -25,7 +24,7 @@ let pigLatin = function(userInput) {
       pigLatinArray.push(word.slice(firstVowelPostion) + word.slice(0, firstVowelPostion) + "ay");
     }
   });
-  return pigLatinArray.join(" ") + ".";
+  return pigLatinArray.join(" ");
 }
 
 //UI Logic
@@ -40,17 +39,3 @@ $(document).ready(function() {
   });
 });
 
-
-
-
- // } else if (userInput.charAt(0) !== vowels) {
-  //   let firstLetterRemoved = arrayInput.slice(1);
-  //   let removedLetter = userInput.charAt(0);
-  //   //array is logging as typeOf function
-    
-  //   array.push(firstLetterRemoved);
-  //   array.push(removedLetter);
-  //   array.push("ay");
-  //   $("#finalWord").text(pigLatinArray);
-      
-  // // } else if {
