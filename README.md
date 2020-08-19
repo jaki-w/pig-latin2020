@@ -8,6 +8,19 @@
 
 This is a Pig Latin Translator which will take inputted phrases/sentences and translate them into Pig Latin.
 
+Word beginning with vowels - will have "way" added to the end. 
+
+Words beginning with consonant - first letter  will be moved to the end and "ay" added.
+
+Words beginning with several consonants - consecutive consonants moved to the end and "ay" added.
+
+Words beginning with "qu"  - will move "qu" to the end and "ay" added. 
+
+Worsd begins 
+
+
+
+
 ## Installation/Setup
 * Clone this repository
 * Run index.html
@@ -34,26 +47,7 @@ Copyright © 2020 **_jaki Widby_** & **_Mark Tiapkov_**
 
 
 
-The program will add 'way' to the end of words that begin with a vowel. DONE
-
-The program will recognize words that begin with a single consonant and move the consant to the end of the word before adding 'ay' to the end. DONE
-
-The program will recognize words that begin with two consonants and move the consants to the end of the word before adding 'ay' to the end. 
-
-The program will recognize words that begin with three consonants and move the consants to the end of the word before adding 'ay' to the end. 
-
-The program will recognize words that begin with qu and move the u with the q to the end of the word before adding 'ay' to the end.
-
-The program will recognize words that have a consonant before qu and will move the consonant and the qu to the end of the word before adding 'ay' to the end. 
-
-The program will recognize non-alphabetic input and respond with a message.
 
 
 
 
-const vowels = ["a", "e", "i", "o", "u"];
-const inputted = function(word) {
-  if ((word.lenght === 1) || (word[0] === "y") || (word[0] === Y)) {
-    return word + "ay"
-  }
-}
